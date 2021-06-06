@@ -1,0 +1,73 @@
+@import './theme.scss';
+.loginsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.2rem 2.5rem;
+    max-width: 500px;
+    @media only screen and (min-width:1024px){
+    width:500px;
+    }
+    background-color: #342452;
+    border-radius: 0.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.heading{
+    text-align: left;
+    padding-bottom: 1rem;;
+    border-bottom: 1px solid white;
+    h2{
+        color: white;
+    }
+}
+.iconandinput{
+    position: relative;
+    i{
+        color: $blue;
+        position: absolute;
+        font-size: 1.3rem;
+        top:0.9rem;
+        left:0.5rem;
+    }
+    input{
+        padding-left: 2.1rem;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        color: $black;
+        &::placeholder{
+            font-size: 0.8rem;
+        }
+    }
+}
+.formdiv{
+    padding-top: 1rem;
+}
+
+.signuplink{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 1rem;
+}
+a{
+    color: white;
+    cursor: pointer;
+}
+span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.linktag{
+    text-decoration: none;
+    cursor: pointer;
+}

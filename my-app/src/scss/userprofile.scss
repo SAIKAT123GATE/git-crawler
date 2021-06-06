@@ -1,0 +1,36 @@
+@import './theme.scss';
+.msec2{
+    button{
+        border-radius: 0.5rem;
+    }
+}
+.userdetails{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:2rem;
+    figure{
+        width:10rem;
+        margin-bottom: 1rem;
+        img{
+            border-radius:70%;
+        }
+    }
+}
+
+.indidetails{
+
+    span{
+        color: $blue;
+        margin-right: 1rem;
+    }
+    li{
+        font-size: 1.3rem;
+        @media only screen and (min-width:1024px){
+        font-size: 1.5rem;
+        }
+        line-height: 2rem;
+    }
+}

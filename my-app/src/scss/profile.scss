@@ -1,0 +1,104 @@
+@import './theme.scss';
+.msec2{
+    @media only screen and (min-width:1024px){
+        padding:2rem;
+    }
+    padding:1rem;
+    height: auto;
+    min-height: 90vh;
+}
+.profile-nav{
+    width: 100%;
+}
+.inputfield{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 1rem;
+    
+    background-color: $blue;
+    .logo{
+        width:3rem;
+        border:2px solid black;
+        overflow: hidden;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+    input{
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border-left: none;
+        &:focus{
+            border: 2px solid black;
+            border-left: none;
+        }
+    }
+}
+
+.linked-button{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: nexa-bold;
+}
+
+.userlogo{
+    width:4rem;
+    img{
+        border-radius: 50%;
+    }
+}
+.cards{
+    display: flex;
+    background-color: white;
+    margin-top: 1.5rem;
+    padding:1rem;
+    border-radius: 0.5rem;
+    border:1px solid $blue;
+}
+.details{
+    span{
+        color:$blue;
+        margin-right: 0.5rem;
+    }
+    
+}
+.loader {
+    margin:auto;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .pagination{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      .page{
+          padding:0.2rem 1rem;
+          border: 1px solid $blue;
+          margin-right: 0.5rem;
+          cursor: pointer;
+      }
+      .active{
+          background-color: $blue;
+          color: white;
+      }
+  }
+  .m-t{
+      margin-top: 1rem;
+  }

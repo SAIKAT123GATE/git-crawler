@@ -1,0 +1,254 @@
+/*global tags*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: nexa-bold;
+  src: url(../fonts/Nexa-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: nexa-light;
+  src: url(../fonts/Nexa-Light.otf) format("opentype");
+}
+
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 1rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    padding: 0.5rem 3rem;
+  }
+}
+
+.navbar figure {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbar figure img {
+  border-radius: 50%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  border: none;
+  width: auto;
+}
+
+button:hover {
+  background-color: #167ddd;
+  color: white;
+}
+
+.accent-button {
+  margin-right: 0.5rem;
+}
+
+.linked-button {
+  width: 100%;
+  background-color: #167ddd;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+}
+
+.linked-button:hover {
+  background-color: white;
+  color: #167ddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: nexa-bold;
+}
+
+h1, h2 {
+  font-size: 1.5rem;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  padding: 0.8rem 1rem;
+  border: 2px solid black;
+}
+
+input:focus {
+  border: 2px solid #167ddd;
+}
+
+p {
+  font-family: nexa-light;
+  font-size: 1rem;
+}
+
+li {
+  line-height: 1.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.msec2 {
+  padding: 1rem;
+  height: auto;
+  min-height: 90vh;
+}
+
+@media only screen and (min-width: 1024px) {
+  .msec2 {
+    padding: 2rem;
+  }
+}
+
+.profile-nav {
+  width: 100%;
+}
+
+.inputfield {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  padding: 1rem;
+  background-color: #167ddd;
+}
+
+.inputfield .logo {
+  width: 3rem;
+  border: 2px solid black;
+  overflow: hidden;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.inputfield input {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-left: none;
+}
+
+.inputfield input:focus {
+  border: 2px solid black;
+  border-left: none;
+}
+
+.linked-button {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-family: nexa-bold;
+}
+
+.userlogo {
+  width: 4rem;
+}
+
+.userlogo img {
+  border-radius: 50%;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #167ddd;
+}
+
+.details span {
+  color: #167ddd;
+  margin-right: 0.5rem;
+}
+
+.loader {
+  margin: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.pagination .page {
+  padding: 0.2rem 1rem;
+  border: 1px solid #167ddd;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background-color: #167ddd;
+  color: white;
+}
+
+.m-t {
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=profile.css.map */

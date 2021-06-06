@@ -1,0 +1,11 @@
+
+
+.main-section{
+  height: 100vh;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #e9dae9;
+}

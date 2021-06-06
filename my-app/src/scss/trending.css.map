@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,WAAW,EAAE,CAAC;CACjB;;AAED,AAAA,WAAW,CAAA;EACH,WAAW,EAAE,IAAI;CACpB",
+    "sources": [
+        "trending.scss"
+    ],
+    "names": [],
+    "file": "trending.css"
+}

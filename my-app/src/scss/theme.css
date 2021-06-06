@@ -1,0 +1,118 @@
+/*global tags*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: nexa-bold;
+  src: url(../fonts/Nexa-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: nexa-light;
+  src: url(../fonts/Nexa-Light.otf) format("opentype");
+}
+
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 1rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    padding: 0.5rem 3rem;
+  }
+}
+
+.navbar figure {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbar figure img {
+  border-radius: 50%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  border: none;
+  width: auto;
+}
+
+button:hover {
+  background-color: #167ddd;
+  color: white;
+}
+
+.accent-button {
+  margin-right: 0.5rem;
+}
+
+.linked-button {
+  width: 100%;
+  background-color: #167ddd;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+}
+
+.linked-button:hover {
+  background-color: white;
+  color: #167ddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: nexa-bold;
+}
+
+h1, h2 {
+  font-size: 1.5rem;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  padding: 0.8rem 1rem;
+  border: 2px solid black;
+}
+
+input:focus {
+  border: 2px solid #167ddd;
+}
+
+p {
+  font-family: nexa-light;
+  font-size: 1rem;
+}
+
+li {
+  line-height: 1.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=theme.css.map */
