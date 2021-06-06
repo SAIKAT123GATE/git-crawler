@@ -8,6 +8,10 @@ export default function Login(props) {
     console.log(response);
     props.setstatus(true);
   };
+  const notresponseGoogle = (response) => {
+    console.log(response);
+    
+  };
   var [user,setUser]=useState({
       email:"",
       password:""
@@ -75,7 +79,7 @@ export default function Login(props) {
               clientId='276206211424-daadlah5gqp4gg1tbrp6eeel671i3qlv.apps.googleusercontent.com'
               buttonText='Login'
               onSuccess={responseGoogle}
-              onFailure={responseGoogle}
+              onFailure={notresponseGoogle}
               cookiePolicy={"single_host_origin"}
             />
           </div>
