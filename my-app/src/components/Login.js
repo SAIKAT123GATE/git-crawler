@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import "../scss/login.css";
 import { Link } from "react-router-dom";
+import GoogleLogin from "react-google-login";
 export default function Login(props) {
+  //Google Response
+  const responseGoogle = (response) => {
+    console.log(response);
+    props.setstatus(true);
+  };
   var [user,setUser]=useState({
       email:"",
       password:""
@@ -64,6 +70,14 @@ export default function Login(props) {
                 <button className="linked-button" onClick={postData} type="reset">L O G I N</button>
               </div>
             </form>
+            <span className="or">OR</span>
+            <GoogleLogin className="googlebutton"
+              clientId='276206211424-daadlah5gqp4gg1tbrp6eeel671i3qlv.apps.googleusercontent.com'
+              buttonText='Login'
+              onSuccess={responseGoogle}
+              onFailure={responseGoogle}
+              cookiePolicy={"single_host_origin"}
+            />
           </div>
 
           <div className="signuplink">

@@ -71,3 +71,19 @@ span{
     text-decoration: none;
     cursor: pointer;
 }
+
+.googlebutton{
+    width:100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+    span{
+        margin:0;
+    }
+}
+.or{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    color: white;
+}
